@@ -8,7 +8,7 @@ This tool is licensed under GNU Lesser General Public License (LGPL).
 ## Hacking
 ### Install dependencies
 
-   sudo python setup.py install 
+    sudo python setup.py install 
 
 
 ### Run on local server
