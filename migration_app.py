@@ -5,7 +5,7 @@ from flask import Flask, render_template, redirect, request, jsonify, session
 from config import config
 from dateutil.parser import parse
 from github import github
-from github.github import GithubRequest
+from github.github_request import GithubRequest
 
 app = Flask(__name__)
 
