@@ -71,19 +71,19 @@
         	<legend>Choose GitHub repository</legend>
 
         	<div class="form-group">
-        		<label for="" class="col-md-4">From : </label>
+        		<label for="" class="col-md-3">From : </label>
                 <select id="from_repo" class="form-control col-md-8" name="from_repo">
                     {% for repo in repos_list %}
-                        <option value="{{repo.name + "," +repo.owner.login}}">{{repo.name}} </option>
+                        <option value="{{repo.name + "," +repo.owner.login}}">{{ repo.owner.login }} / {{repo.name}}</option>
                     {% endfor %}
                 </select>
         	</div>
 
             <div class="form-group">
-        		<label for="" class="col-md-4">Into :</label>
+        		<label for="" class="col-md-3">Into :</label>
                 <select id="into_repo" class="form-control col-md-8" name="into_repo">
                     {% for repo in repos_list %}
-                        <option value="{{repo.name + "," +repo.owner.login}}">{{repo.name}}</option>
+                        <option value="{{repo.name + "," +repo.owner.login}}">{{ repo.owner.login }} / {{repo.name}}</option>
                     {% endfor %}
                 </select>
         	</div>
@@ -106,10 +106,10 @@
     $(document).ready(function () {
         $("#from_repo").chosen({
             no_results_text: "Oops, nothing found!",
-            width: "66.66%"});
+            width: "75%"});
         $("#into_repo").chosen({
             no_results_text: "Oops, nothing found!",
-            width: "66.66%"});
+            width: "75%"});
     });
 </script>
 </body>
