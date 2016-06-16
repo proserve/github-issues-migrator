@@ -1,6 +1,6 @@
 import json
 
-from oauthlib import oauth2
+import oauth_client as oauth2
 
 from config.local import config
 
